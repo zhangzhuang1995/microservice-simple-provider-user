@@ -13,6 +13,11 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+    /**
+     * http://localhost:7900/simple/1
+     * @param id
+     * @return
+     */
     @GetMapping("/simple/{id}")
 //   @GetMapping相当于 @RequestMapping(value = "/simple",method = RequestMethod.GET)
     public User findById(@PathVariable  Long id) {
